@@ -1,4 +1,6 @@
 // TODO: Declare any global variables we need
+let headsRolled = 0;
+let tailsRolled = 0;
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -7,7 +9,21 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Hi')
 
     // TODO: Add event listener and handler for flip and clear buttons
+const flipBtn = document.querySelector
+const pennyImg = document.getElementById('pennyImg')
+const message = document.getElementById('message')
+flipBtn.addEventListener('click',()=>{
+    let flippedHeads= Math.random() < 0.5
 
+    if (flippedHeads){
+        // if its heads 
+        pennyImg.src = 'assets/images/penny-heads.jpg'
+        message.textContent = "you flipped heads!"
+    }else{
+        pennyImg.src = 'assets/images/penny-tails.jpg'
+        message.textContent = 'you flipped tails!'
+
+}
     // Flip Button Click Handler
         // TODO: Determine flip outcome
         // TODO: Update image and status message in the DOM
